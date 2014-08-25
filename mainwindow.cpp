@@ -59,7 +59,7 @@ bool MainWindow::load_hostfile(QString filename)
             return 1;
 
     QTextStream in(&file);
-    QString line = in.readLine();
+    QString line = "";
     while (!line.isNull()) {
 
        line = in.readLine();
